@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Snake-n-Ladder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="https://fonts.googleapis.com/css?family=Fascinate|Pacifico|Raleway" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link href="snake.css" rel="stylesheet" />
+    <link href="dice.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="snake.js"></script>
+</head>
+
+<body>
+
+    <div id="play_area" class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div style="overflow-x:auto;">
+                    <table id="tbl_playground" class="custom shadow">
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="div_controls shadow">
+                <table>
+                    <tr>
+                        <td colspan="4" class="heading">
+                            Roll the dice to start game <i class="fa fa-info-circle" aria-hidden="true" data-toggle="modal" data-target="#modal_tip"></i><hr/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="color_you">
+                          <p id="you_marker"><i class="fa fa-map-marker animated infinite bounce" aria-hidden="true"></i></p>
+                          You
+                        </td>
+                        <td colspan="2" class="dice_main_container">
+                            <div id="dice_face" class="one"></div>
+                        </td>
+                        <td class="color_pc">
+                          <p id="pc_marker" style="display:none"><i class="fa fa-map-marker animated infinite bounce" aria-hidden="true"></i></p>
+                          Com
+                        </td>
+                    </tr>
+                    <!--<tr>
+                        <td>
+                          <span id="dice_value">0</span>
+                        </td>
+                        <td colspan="2"></td>
+                        <td>
+                          <span id="dice_c_value">0</span>
+                        </td>
+                    </tr>-->
+                </table>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+    <div id="modal_tip" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Few tips</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Click dice to start the game</li>
+                        <li><span style="color:#D50000">Red</span> is you</li>
+                        <li><span style="color:#8E44AD">Purple</span> is computer</li>
+                        <li>Computer movement is made soon after you rolled the dice</li>
+                        <li>Snakes and Ladders are placed on random order in the board for every game (min 0 and max 6 snake & game)</li>
+                        <li>Refresh browser to restart the game</li>
+                    </ul>
+                    <hr/>Usual developers note :- The game worked perfectly in my machine... If you face any issues it might be your browser compatibility issue.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modal_win" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <span id="winner"></span>
+                    <p>
+                        <a href="#/" onclick="restart_game()">Play again?</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

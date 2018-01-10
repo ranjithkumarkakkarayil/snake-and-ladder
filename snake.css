@@ -1,0 +1,379 @@
+
+body{
+  font-family: 'Raleway', sans-serif;
+
+  background: linear-gradient(270deg, #1CB5E0,#0f0c29,#1CB5E0,#1CB5E0);
+  background-size: 800% 800%;
+
+  -webkit-animation: snlbganimation 30s ease infinite;
+  -moz-animation: snlbganimation 30s ease infinite;
+  animation: snlbganimation 30s ease infinite;
+}
+
+@-webkit-keyframes snlbganimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes snlbganimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes snlbganimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+table.custom{
+  width: 80%;
+  height: 80%;
+  margin: 1em;
+  border-radius: 5px;
+  table-layout: fixed;
+}
+
+table.custom tbody tr td{
+  background-color: white;
+  border: 1px solid #D6EAF8;
+  width:75px;
+  height: 60px;
+  text-align: center;
+}
+
+table.custom tbody tr td .cell_id, table.custom tbody tr td .cell_id::selection{
+  color: #DEF1FD;
+}
+
+a, a:hover, a:active, a:focus{
+  text-decoration: none !important;
+}
+
+.div_controls{
+  background-color: white;
+  margin-top: 1em;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.div_controls table{
+  margin: 0 auto;
+}
+
+a i{
+  margin-right: 0.5em;
+}
+
+.movement{
+  font-weight: bold;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 10px 6px -6px #001D44;
+       -moz-box-shadow: 0 10px 6px -6px #001D44;
+            box-shadow: 0 10px 6px -6px #001D44;
+            border-radius: 5px;
+}
+
+.card {
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.cell_id{
+  font-size: x-small;
+}
+
+.down_to{
+  font-weight: bold;
+  font-size: 10px;
+  color: #D50000;
+}
+
+.up_to{
+  font-weight: bold;
+  font-size: 10px;
+  color: #28B463;
+}
+
+.pointers{
+  font-size: 1px;
+  color: white;
+  display: none;
+}
+
+.width_auto{
+  display: block;
+}
+
+#tbl_playground{
+  margin: 1em;
+}
+
+#modal_win .modal-body{
+  text-align: center;
+  background-color: #28B463;
+  color: white;
+}
+
+#modal_win .modal-body p a{
+  color: white;
+  font-size: 10px;
+}
+
+.heading{
+  font-family: 'Pacifico', cursive;
+}
+
+.color_you, #you_marker{
+  color: #D50000;
+  font-size: x-large;
+  font-family: 'Pacifico', cursive;
+}
+
+.color_pc, #pc_marker{
+  color: #8E44AD;
+  font-size: x-large;
+  font-family: 'Pacifico', cursive;
+}
+
+#dice_value, #dice_c_value{
+  font-family: 'Fascinate', cursive;
+  font-size: 50px;
+}
+
+i{
+  cursor: pointer;
+}
+
+.dice_main_container {
+  padding: 2em !important;
+  padding-right: 5.5em !important;
+}
+
+#dice_face{
+  height: 50px;
+  width: 50px;
+  background-color: #DC143C;
+  /*position: absolute;*/
+  border-radius: 5px;
+  box-shadow: 0 0 0 rgba(0,0,0,0.30), 0 3px 3px rgba(0,0,0,0.22);
+  cursor: pointer;
+  margin-top: -2em;
+}
+
+.one:before{
+    content: "";
+    /*position: absolute;*/
+    height: 100%;
+    width: 20px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.one:before {
+    left: 30%;
+}
+
+.two:before {
+    content: "";
+    /*position: absolute;*/
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.two:after {
+    content: "";
+    /*position: absolute;*/
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.two:before {
+    left: 0px;
+}
+
+.two:after {
+    right: 0px;
+}
+
+.three{
+  content: "";
+  /*position: absolute;*/
+  height: 100%;
+  width: 20px;
+  background-image: radial-gradient(circle at center, white 5px, transparent 6px);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.three:before {
+    content: "";
+    /*position: absolute;*/
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.three:after {
+    content: "";
+    /*position: absolute;*/
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.three:before {
+    left: 0px;
+}
+
+.three:after {
+    right: 0px;
+}
+
+.four:before, .four:after {
+    content: "";
+    /*position: absolute;*/
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat;
+}
+
+.four:before {
+    left: 0px;
+}
+
+.four:after {
+    right: 0px;
+}
+
+.five{
+  content: "";
+  /*position: absolute;*/
+  height: 100%;
+  width: 20px;
+  background-image: radial-gradient(circle at center, white 5px, transparent 6px);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.five:before, .five:after {
+    content: "";
+    /*position: absolute;*/
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat;
+}
+
+.five:before {
+    left: 0px;
+}
+
+.five:after {
+    right: 0px;
+}
+
+.six:before, .six:after {
+    content: "";
+    /*position: absolute;*/
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: top center, bottom center, center center;
+    background-repeat: no-repeat;
+}
+
+.six:before {
+    left: 0px;
+}
+
+.six:after {
+    right: 0px;
+}
+
+@media only screen and (max-width: 700px) {
+    #div_ctrls{
+      width: 100% !important;
+    }
+
+    .div_dice_container, .tbl_container{
+      float: left;
+    }
+
+    .tbl_container{
+      margin-left: 3em;
+    }
+
+    .div_controls{
+      background-color: white;
+      padding: 1em;
+      margin-top: 1em;
+      text-align: center;
+      border-radius: 5px;
+      max-width: 100%;
+      height: 160px;
+      margin: 0 auto;
+    }
+
+    .tbl_palyer tr td{
+      font-size: x-large;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+
+    .tbl_palyer tr td:last-child{
+      margin-left: 1em;
+    }
+
+    .div_all_controls #div_ctrls{
+      margin: 0 auto;
+      margin-bottom: 1em;
+    }
+}

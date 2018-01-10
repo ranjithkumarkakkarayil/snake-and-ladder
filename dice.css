@@ -1,0 +1,166 @@
+.dice_main_container {
+  padding: 1em;
+}
+
+#dice_face{
+  height: 50px;
+  width: 50px;
+  background-color: #DC143C;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 0 0 0 rgba(0,0,0,0.30), 0 3px 3px rgba(0,0,0,0.22);
+  cursor: pointer;
+}
+
+.one:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.one:before {
+    left: 30%;
+}
+
+.two:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.two:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.two:after {
+    right: 0px;
+}
+
+.three{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  background-image: radial-gradient(circle at center, white 5px, transparent 6px);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.three:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.three:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.three:after {
+    right: 0px;
+}
+
+.four:before, .four:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat;
+}
+
+.four:before {
+    left: 0px;
+}
+
+.four:after {
+    right: 0px;
+}
+
+.five{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 20px;
+  background-image: radial-gradient(circle at center, white 5px, transparent 6px);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.five:before, .five:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat;
+}
+
+.five:before {
+    left: 0px;
+}
+
+.five:after {
+    right: 0px;
+}
+
+.six:before, .six:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    background-image: radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px), radial-gradient(circle at center, white 5px, transparent 6px);
+    background-size: 20px 20px;
+    background-position: top center, bottom center, center center;
+    background-repeat: no-repeat;
+}
+
+.six:before {
+    left: 0px;
+}
+
+.six:after {
+    right: 0px;
+}
